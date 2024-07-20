@@ -98,6 +98,39 @@ public class Patterns {
 
 //8.
 //OMISSION
+//       * * 
+//     * * * * 
+//   * * * * * *
+// * * * * * * *
+for(int i=1;i<=n;i++){
+    for(int k=0;k<(n-i);k++){
+        System.out.print("  ");
+    }
+    for(int j=1;j<=i;j++){
+             System.out.print("* ");
+    }
+    for(int j=1;j<=i && j<=n-1;j++){ //condition for omission
+        System.out.print("* ");
+    }
+    System.out.println();
+}
+// 9/
+//       * 
+//     * * * 
+//   * * * * * 
+// * * * * * * * 
+// for(int i=1;i<=n;i++){
+//     for(int k=0;k<(n-i);k++){
+//         System.out.print("  ");
+//     }
+//     for(int j=1;j<=i;j++){
+//              System.out.print("* ");
+//     }
+//     for(int j=1;j<=i-1;j++){
+//         System.out.print("* ");
+//     }
+//     System.out.println();
+// }
 
 }
 }
