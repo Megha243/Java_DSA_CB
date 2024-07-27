@@ -20,8 +20,8 @@ public class BinarySearch {
         return false;
     }
     static boolean binarySearch(int []arr,int n){
-        int i=0;
-        int j=arr.length-1;
+        int i=0; //low
+        int j=arr.length-1; //high
         while (i<=j) {
             int mid=(i+j)/2;
             if(arr[mid]==n){
@@ -40,7 +40,7 @@ public class BinarySearch {
     public static void main(String[] args) {
         int []arr={1,5,3,8,7,9,6};
 
-        Arrays.sort(arr); //combination of quick and merge sort and gie=ves better time complexity
+        Arrays.sort(arr); //combination of quick and merge sort and gives better time complexity
         //1,2,5,6,7,8,9
         //0 1 2 3 4 5 6
         // System.out.println(binarySearch(arr, 9));
