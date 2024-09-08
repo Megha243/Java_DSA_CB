@@ -1,15 +1,14 @@
 package Week3.Day1;
 
 public class RotateArray {
-    class Solution {
-        public void rotate(int[] nums, int k) {
+        public static void rotate(int[] nums, int k) {
             k%=nums.length;
             int n=nums.length;
             reverse(nums,0,n-1);
             reverse(nums,0,k-1);
             reverse(nums,k,n-1);
         }
-        public void reverse(int []nums,int i,int j){
+        public static void reverse(int []nums,int i,int j){
             while(i<j){
                 int temp=nums[i];
                 nums[i]=nums[j];
@@ -18,7 +17,14 @@ public class RotateArray {
                 j--;
             }
         }
-    }
+        public static void main(String[] args) {
+            int []arr={2,3,4,5,6,7,9};
+            rotate(arr, 3);
+            for(int i=0;i<arr.length;i++){
+                System.out.print(arr[i]+" ");
+            }
+        }
+}
     // class Solution {
     //     public void rotate(int[] nums, int k) {
     //         int n=nums.length;
@@ -56,4 +62,4 @@ public class RotateArray {
     //     }
     
     // }
-}
+

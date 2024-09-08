@@ -5,7 +5,7 @@ public class BinarySearch {
         int i=a;
         int j=b;
         while (i<=j) {
-            int mid=(i+j)/2;
+            int mid=(i+j)/2; //mid=high-(high-low)/2 ***MORE OPTIMAL WAY
             if(arr[mid]==n){
                 System.out.println(mid);
                 return true;
