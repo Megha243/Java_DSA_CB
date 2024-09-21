@@ -14,4 +14,8 @@ public class Flowchart{
         System.out.println("Ascii value:"+y);
         sc.close();
     }
+
+    //It won't be executable file and just does not give any error
+    // public static void main(Imteger[] args) {
+    // }
 }

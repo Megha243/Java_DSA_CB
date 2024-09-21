@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 // Return the size of the longest non-empty subarray containing only 1's in the resulting array. Return 0 if there is no such subarray.
 public class DeleteOneElement {
-
+//SLIDING WINDOW
     static int longestSubarrayWithOneDeletion(int[] nums) {
         int maxLength = 0;
         int zeroCount = 0;
@@ -36,12 +36,14 @@ public class DeleteOneElement {
         Scanner sc = new Scanner(System.in);
         
         // Read input values
+        System.out.println("Enter total elemnts");
         int N = sc.nextInt();
         int[] nums = new int[N];
+        System.out.println("Enter either 0 or 1 in array");
         for (int i = 0; i < N; i++) {
             nums[i] = sc.nextInt();
         }
-
+        // 1,1,0,1,1,1,0,1
         // Calculate and print the length of the longest subarray containing only 1s after one deletion
         System.out.println(longestSubarrayWithOneDeletion(nums));
 

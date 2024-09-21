@@ -1,5 +1,4 @@
 package Week2.Day2;
-
 import java.util.Arrays;
 
 public class InsertionSort {
